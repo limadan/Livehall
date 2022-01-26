@@ -1,0 +1,26 @@
+.post-box{
+    color: white;
+    position: relative;
+    margin: 2rem;
+    width: 90%;
+    max-width: 1000px;
+    padding: 2%;
+    border-radius: 1rem;
+}
+
+.post-box h3{
+    margin: 2rem;
+}
+
+.post-box .make-post{
+    position: sticky;
+    color: white;
+    left: 100%;
+    bottom: 2%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 200%;
+    background-color: #A61458;
+    border: none;
+    border-radius: 1rem;
+}

@@ -1,0 +1,39 @@
+.comments{
+    color: white;
+    line-height: 2rem;
+    width: 90%;
+    max-width: 800px;
+}
+
+.comment{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: left;
+    align-items: center;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    column-gap: 1rem;
+    padding: 1rem;
+    margin: 3rem 0;
+    max-width: 700px;
+}
+
+.comment img{
+    grid-row: span 3;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.comment h2, .comment footer{
+    height: 1rem;
+    grid-row: span 5;
+}
+
+.comment footer button{
+    margin-right: 0.5rem;
+}
+
+

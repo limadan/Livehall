@@ -1,0 +1,31 @@
+.categories{
+    color: #FFFFFF;
+	text-align: center;
+}
+
+
+.categories nav{
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.categories nav::-webkit-scrollbar{
+	display: none;
+}
+
+.categories h4{
+	margin: auto;
+}
+
+.categories nav a{
+	flex: none;
+	width: 20%;
+	max-width: 300px;
+	margin: 0 0.5rem;
+}
+
+.categories nav a img{
+	height: 100%;
+	width: 100%;
+}

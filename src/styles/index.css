@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+	color: #FFFFFF;
+}
+
+.comunity-img{
+    width: 100%;
+}
+
+body{
+    font-family: Roboto;
+	background-color: #3D3D3D;
+}
+
+img{
+	object-fit: cover;
+}
+
+#corpo{
+    width: 100%;
+    height: 100%;
+	padding-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a, button{
+	cursor: pointer;
+}

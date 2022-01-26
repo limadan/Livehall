@@ -1,0 +1,61 @@
+.post{
+    padding: 1rem;
+    background-color: #2c2c2c;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.5rem 1rem;
+}
+
+.post header img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: 1.25rem;
+}
+
+.post p{
+    width: 90%;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: white;
+    text-align: left;
+}
+
+.post footer{
+    margin-left: 1rem;
+    width: 90%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.post footer button{
+    margin-left: 0.5rem;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    color: white;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post footer button img{
+    height: 100%;
+}
+
+.post footer:last-child button img{
+    margin-right: 0.5rem;
+    height: 1.5rem;
+    filter: invert(100%);
+}

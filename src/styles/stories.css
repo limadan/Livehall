@@ -1,0 +1,61 @@
+.stories{
+	color: #FFFFFF;
+	align-items: center;
+	margin: 2rem 0;
+	padding: 1rem 2rem;
+	width: 90%;
+	height: 10rem;
+	background-color: #2c2c2c;
+	border: 1px solid #000000;
+	border-radius: 0.7rem;
+}
+
+.stories h4{
+    text-align: left;
+	margin-left: 5%;
+    margin-bottom: 1rem;
+}
+
+.stories div{
+	display: flex;
+}
+
+.stories nav{
+	display: flex;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+.stories nav a{
+	flex: none;
+	background-color: #4b4b4b;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	margin: 0 0.5rem
+}
+
+.stories nav a img{
+	width: 100%;
+        border-radius: 50%;
+}
+
+
+.stories nav::-webkit-scrollbar{
+	display: none;
+}
+
+.stories button{
+	
+	margin: 0.5rem;
+	z-index: 1;
+	background: none;
+	border: none;
+}
+
+.stories button img{
+	height: 3rem;
+	filter: invert(100%);
+	margin: 0.3rem;
+}
