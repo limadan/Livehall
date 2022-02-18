@@ -9,7 +9,7 @@ import VALORANT from '../imgs/VALORANT.png'
 export default function Categorias(){
     return(
         <React.Fragment>
-        <div class="categories">
+        <div className="categories">
             <h4>CATEGORIAS</h4>
                 <nav>
                     <a href ="">

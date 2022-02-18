@@ -6,7 +6,7 @@
     height: 30%;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(3, 1fr);
-   align-items: center;
+    align-items: center;
     gap: 0.1rem;
 }
 

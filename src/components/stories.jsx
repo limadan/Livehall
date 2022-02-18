@@ -34,7 +34,7 @@ export default function Stories(props){
 
     return(
         <React.Fragment>
-        <div class="stories">
+        <div className="stories">
             <h4>Stories que você pode gostar</h4>
             <div>
             <button onClick={handleLeftClick}>

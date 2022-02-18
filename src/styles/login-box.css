@@ -1,29 +1,28 @@
-.login-box{
-    position: absolute;
-    width: 25%;
-    left: 5%;
-    font-size: 70%;
-    padding-bottom: 1rem;
+.login-form{
+    width: 60%;
+    min-height: 450px;
+    max-width: 400px;
     margin: auto;
+    font-size: 70%;
+    padding: 1rem 0;
     border-radius: 2rem;
     background-color: #2C2C2C;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.login-box *{
-    display: block;
+.login-form img{
+    width: 30%;
 }
 
-.login-box h2{
-    margin: 2rem;
-}
-
-.login-box div{
-    margin: 10%;
+.login-form div{
     width: 80%;
 }
 
-.login-box input{
+.login-form input{
     color: black;
     width: 100%;
     border: none;
@@ -31,7 +30,8 @@
     border-radius: 0.5rem;
 }
 
-.login-box button{
+.login-form button{
+    margin: 0.5rem 0;
     width: 60%;
     height: 2.5rem;
     border-radius: 0.5rem;
@@ -40,3 +40,16 @@
     color: #FFFFFF
 }
 
+.login-form h3{
+    color: #FF2200;
+}
+
+.genero-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.genero-form div{
+    display: flex;
+}

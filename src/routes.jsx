@@ -10,6 +10,8 @@ import EscreverPost from './main/escrever_post';
 import PaginaComentarios from './main/comentarios.jsx';
 import Blog from './main/blog.jsx';
 import BlogPage from './main/blog-page.jsx';
+import Login from './components/login.jsx';
+import Cadastro from './components/cadastro.jsx';
 
 export default function Routes(){
       return(
@@ -23,6 +25,8 @@ export default function Routes(){
 		        <Route path="/config-conta" component={ConfigConta}/>
                 <Route path="/blog" component={Blog}/>
    		        <Route path="/blog-page" component={BlogPage}/>
+                <Route path="/login" component={Login}/>
+                <Route path="/cadastro" component={Cadastro}/>
             </Switch>
         </BrowserRouter>
     )

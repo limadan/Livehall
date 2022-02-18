@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import axios from 'axios'
 import {useRef} from 'react'
 import '../styles/streams.css';
 
@@ -14,19 +16,26 @@ import leftArrow from '../imgs/icons/left-arrow.png'
 import rightArrow from '../imgs/icons/right-arrow.png'
 
 export default function Streams(){
+    let [streams, setStreams] = React.useState([]);
+    const getStreams = ()=>{
+      axios.get('http://localhost:8000/streams').then((res)=>{
+        const data = res.data
+        console.log(data)
+        setStreams(data)
+      })
+    }
+
+    React.useEffect(()=>getStreams(),[])
 
     const carousel = useRef(null);
 
-
     const handleRightClick = (e)=>{
         e.preventDefault();
-        console.log(carousel.current.offsetWidth);
         carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
 
     const handleLeftClick = (e)=>{
         e.preventDefault();
-        console.log(carousel.current.offsetWidth);
         carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
 
@@ -39,27 +48,16 @@ export default function Streams(){
               <img src={leftArrow}/>
             </button>
                     <nav ref={carousel}>
-                        <a href ="">
-                          <img src={stream1}/>
-                        </a>
-                        <a href ="">
-                          <img src={stream2}/>
-                        </a>
-                        <a href ="">
-                          <img src={stream3}/>
-                        </a>
-                        <a href ="">
-                          <img src={stream4}/>
-                        </a>
-                        <a href ="">
-                          <img src={stream5}/>
-                        </a>
-                        <a href ="">
-                          <img src={stream6}/>
-                        </a>
-                        <a href ="">
-                          <img src={stream7}/>
-                        </a>
+                      {
+                        streams.map(stream=>
+                          <a href={stream.link} target="_blank">
+                            <img src={stream1}/>
+                          </a>
+                      )
+                    }
+                      <a href="" target="_blank">
+                            <img src={stream1}/>
+                          </a>
                     </nav>
             <button onClick = {handleRightClick}>
               <img src={rightArrow}/>

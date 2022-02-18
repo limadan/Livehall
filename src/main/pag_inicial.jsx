@@ -15,7 +15,5 @@ export default function PaginaInicial(){
         <Recomendacoes/>
         <Categorias/>
         <Streams/>
-        <Streams/>
-        <Streams/>
     </React.Fragment>
 }
